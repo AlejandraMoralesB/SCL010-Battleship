@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/SCL010-Battleship/static/css/main.4f3a6e9f.chunk.css",
-    "main.js": "/SCL010-Battleship/static/js/main.9eeca1e0.chunk.js",
-    "main.js.map": "/SCL010-Battleship/static/js/main.9eeca1e0.chunk.js.map",
+    "main.js": "/SCL010-Battleship/static/js/main.1fd8c72d.chunk.js",
+    "main.js.map": "/SCL010-Battleship/static/js/main.1fd8c72d.chunk.js.map",
     "runtime-main.js": "/SCL010-Battleship/static/js/runtime-main.f02e94b7.js",
     "runtime-main.js.map": "/SCL010-Battleship/static/js/runtime-main.f02e94b7.js.map",
-    "static/js/2.fc792b02.chunk.js": "/SCL010-Battleship/static/js/2.fc792b02.chunk.js",
-    "static/js/2.fc792b02.chunk.js.map": "/SCL010-Battleship/static/js/2.fc792b02.chunk.js.map",
+    "static/js/2.7899cff7.chunk.js": "/SCL010-Battleship/static/js/2.7899cff7.chunk.js",
+    "static/js/2.7899cff7.chunk.js.map": "/SCL010-Battleship/static/js/2.7899cff7.chunk.js.map",
     "index.html": "/SCL010-Battleship/index.html",
-    "precache-manifest.1f9b5c8ccc65fdd5c9a64af966f5163a.js": "/SCL010-Battleship/precache-manifest.1f9b5c8ccc65fdd5c9a64af966f5163a.js",
+    "precache-manifest.474a54f9a8f1e0be9a5ac75ecbe4af4d.js": "/SCL010-Battleship/precache-manifest.474a54f9a8f1e0be9a5ac75ecbe4af4d.js",
     "service-worker.js": "/SCL010-Battleship/service-worker.js",
     "static/css/main.4f3a6e9f.chunk.css.map": "/SCL010-Battleship/static/css/main.4f3a6e9f.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.f02e94b7.js",
-    "static/js/2.fc792b02.chunk.js",
+    "static/js/2.7899cff7.chunk.js",
     "static/css/main.4f3a6e9f.chunk.css",
-    "static/js/main.9eeca1e0.chunk.js"
+    "static/js/main.1fd8c72d.chunk.js"
   ]
 }
