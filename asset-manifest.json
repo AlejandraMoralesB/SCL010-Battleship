@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/SCL010-Battleship/static/css/main.68e84557.chunk.css",
-    "main.js": "/SCL010-Battleship/static/js/main.9783ff1d.chunk.js",
-    "main.js.map": "/SCL010-Battleship/static/js/main.9783ff1d.chunk.js.map",
+    "main.css": "/SCL010-Battleship/static/css/main.19406eab.chunk.css",
+    "main.js": "/SCL010-Battleship/static/js/main.d7ae42a5.chunk.js",
+    "main.js.map": "/SCL010-Battleship/static/js/main.d7ae42a5.chunk.js.map",
     "runtime-main.js": "/SCL010-Battleship/static/js/runtime-main.f02e94b7.js",
     "runtime-main.js.map": "/SCL010-Battleship/static/js/runtime-main.f02e94b7.js.map",
-    "static/js/2.0734fe1f.chunk.js": "/SCL010-Battleship/static/js/2.0734fe1f.chunk.js",
-    "static/js/2.0734fe1f.chunk.js.map": "/SCL010-Battleship/static/js/2.0734fe1f.chunk.js.map",
+    "static/js/2.ca124bd1.chunk.js": "/SCL010-Battleship/static/js/2.ca124bd1.chunk.js",
+    "static/js/2.ca124bd1.chunk.js.map": "/SCL010-Battleship/static/js/2.ca124bd1.chunk.js.map",
     "index.html": "/SCL010-Battleship/index.html",
-    "precache-manifest.e6ebe6e03b6624ca2db028f6b9ef3b3e.js": "/SCL010-Battleship/precache-manifest.e6ebe6e03b6624ca2db028f6b9ef3b3e.js",
+    "precache-manifest.1a346710717c3dc23a06563063db3d75.js": "/SCL010-Battleship/precache-manifest.1a346710717c3dc23a06563063db3d75.js",
     "service-worker.js": "/SCL010-Battleship/service-worker.js",
-    "static/css/main.68e84557.chunk.css.map": "/SCL010-Battleship/static/css/main.68e84557.chunk.css.map"
+    "static/css/main.19406eab.chunk.css.map": "/SCL010-Battleship/static/css/main.19406eab.chunk.css.map",
+    "static/media/BATTLE OF POWER-logo-gameboard.svg": "/SCL010-Battleship/static/media/BATTLE OF POWER-logo-gameboard.d4ae7dfe.svg",
+    "static/media/DONALD-01.png": "/SCL010-Battleship/static/media/DONALD-01.decbbb1e.png",
+    "static/media/GRETA MASK-01.png": "/SCL010-Battleship/static/media/GRETA MASK-01.2da8cca3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f02e94b7.js",
-    "static/js/2.0734fe1f.chunk.js",
-    "static/css/main.68e84557.chunk.css",
-    "static/js/main.9783ff1d.chunk.js"
+    "static/js/2.ca124bd1.chunk.js",
+    "static/css/main.19406eab.chunk.css",
+    "static/js/main.d7ae42a5.chunk.js"
   ]
 }
