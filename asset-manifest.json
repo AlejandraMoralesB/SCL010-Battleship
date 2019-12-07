@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SCL010-Battleship/static/css/main.42cfc6c0.chunk.css",
-    "main.js": "/SCL010-Battleship/static/js/main.7c274782.chunk.js",
-    "main.js.map": "/SCL010-Battleship/static/js/main.7c274782.chunk.js.map",
+    "main.js": "/SCL010-Battleship/static/js/main.7dbd9b3d.chunk.js",
+    "main.js.map": "/SCL010-Battleship/static/js/main.7dbd9b3d.chunk.js.map",
     "runtime-main.js": "/SCL010-Battleship/static/js/runtime-main.f02e94b7.js",
     "runtime-main.js.map": "/SCL010-Battleship/static/js/runtime-main.f02e94b7.js.map",
-    "static/js/2.e46cb0cf.chunk.js": "/SCL010-Battleship/static/js/2.e46cb0cf.chunk.js",
-    "static/js/2.e46cb0cf.chunk.js.map": "/SCL010-Battleship/static/js/2.e46cb0cf.chunk.js.map",
+    "static/js/2.9c524bb3.chunk.js": "/SCL010-Battleship/static/js/2.9c524bb3.chunk.js",
+    "static/js/2.9c524bb3.chunk.js.map": "/SCL010-Battleship/static/js/2.9c524bb3.chunk.js.map",
     "index.html": "/SCL010-Battleship/index.html",
-    "precache-manifest.0150def7a2036feefe629321c3f0c14b.js": "/SCL010-Battleship/precache-manifest.0150def7a2036feefe629321c3f0c14b.js",
+    "precache-manifest.22e7ce65969c5d4fba3b45b1b5554aeb.js": "/SCL010-Battleship/precache-manifest.22e7ce65969c5d4fba3b45b1b5554aeb.js",
     "service-worker.js": "/SCL010-Battleship/service-worker.js",
     "static/css/main.42cfc6c0.chunk.css.map": "/SCL010-Battleship/static/css/main.42cfc6c0.chunk.css.map",
     "static/media/BATTLE OF POWER-logo-gameboard.svg": "/SCL010-Battleship/static/media/BATTLE OF POWER-logo-gameboard.d4ae7dfe.svg",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f02e94b7.js",
-    "static/js/2.e46cb0cf.chunk.js",
+    "static/js/2.9c524bb3.chunk.js",
     "static/css/main.42cfc6c0.chunk.css",
-    "static/js/main.7c274782.chunk.js"
+    "static/js/main.7dbd9b3d.chunk.js"
   ]
 }
