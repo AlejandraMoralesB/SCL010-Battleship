@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9a4438e4d5a40f84de28ae921048a65",
+    "revision": "e951542b3ab5658e497339cf377e5d0b",
     "url": "/SCL010-Battleship/index.html"
   },
   {
-    "revision": "a49af1c49e8b5b027995",
-    "url": "/SCL010-Battleship/static/css/main.19406eab.chunk.css"
+    "revision": "df35732d6ff6c71b6254",
+    "url": "/SCL010-Battleship/static/css/main.42cfc6c0.chunk.css"
   },
   {
-    "revision": "01a663b2cb2d29e4ce01",
-    "url": "/SCL010-Battleship/static/js/2.ca124bd1.chunk.js"
+    "revision": "5ad474286e299866d470",
+    "url": "/SCL010-Battleship/static/js/2.e46cb0cf.chunk.js"
   },
   {
-    "revision": "a49af1c49e8b5b027995",
-    "url": "/SCL010-Battleship/static/js/main.d7ae42a5.chunk.js"
+    "revision": "df35732d6ff6c71b6254",
+    "url": "/SCL010-Battleship/static/js/main.7c274782.chunk.js"
   },
   {
     "revision": "e0b7d89ad4d4cd0036f1",
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2da8cca323cd498d44e45f73e86ab6e8",
     "url": "/SCL010-Battleship/static/media/GRETA MASK-01.2da8cca3.png"
+  },
+  {
+    "revision": "e0a0a497cb6bbe560a33f7d993eb99cb",
+    "url": "/SCL010-Battleship/static/media/maxresdefault.e0a0a497.jpg"
   }
 ]);
