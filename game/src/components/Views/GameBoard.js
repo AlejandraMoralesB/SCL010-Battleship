@@ -6,6 +6,18 @@ import "./GameBoard.css";
 import "../../components/Buttons/Square.css";
 import { Col, Row } from "reactstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Modal from "react-modal";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)"
+  }
+};
 
 class GameBoard extends Component {
   constructor(props) {
@@ -32,6 +44,27 @@ class GameBoard extends Component {
       arrayPiecesPlayerTwo: this.piecesTwo,
       isOpenBoardTwo: false
     };
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = "#f00";
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
   }
 
   //SCROLL TOP DEL GAMEBOARD
@@ -248,7 +281,7 @@ class GameBoard extends Component {
                     src={require("./img/BATTLE OF POWER-greta.png")}
                     alt="greta"
                   />
-                  {/* <p>My board</p> */}
+                  <p> Payer One | My Board </p>
 
                   <Col xs="11">
                     <div className="board">
@@ -266,6 +299,35 @@ class GameBoard extends Component {
                       alt="trump"
                     />
                   </Row>
+                  <div>
+                    <button
+                      className="btn-instruction"
+                      onClick={this.openModal}
+                    >
+                      INSTRUCTIONS
+                    </button>
+                    <Modal
+                      isOpen={this.state.modalIsOpen}
+                      onAfterOpen={this.afterOpenModal}
+                      onRequestClose={this.closeModal}
+                      style={customStyles}
+                    >
+                      <p ref={subtitle => (this.subtitle = subtitle)}>
+                        {" "}
+                        <big>
+                          <b>Instrucciones: “Battle Of Power” ( Spanish)</b>
+                        </big>{" "}
+                        <br /> 1- En el primer tablero posicionar las piezas en
+                        las casillas siendo tu zona de juego el cual permanecerá
+                        oculta para tu enemigo.
+                        <br />
+                        2-Una vez posicionadas tus piezas comienzas la partida,
+                        no podrás volver a cambiarlos de posición.
+                        <br />
+                      </p>
+                      <button onClick={this.closeModal}>close</button>
+                    </Modal>
+                  </div>
                   <button className="btn-start" onClick={this.scrollToBottom}>
                     DONALD TURN
                   </button>
@@ -276,7 +338,7 @@ class GameBoard extends Component {
                     src={require("./img/BATTLE OF POWER-trump.png")}
                     alt="trump"
                   />
-                  {/* <p> Enemy Board </p> */}
+                  <p> Player One | Board Enemy </p>
 
                   <Col xs="11">
                     <div className="board">
@@ -302,7 +364,7 @@ class GameBoard extends Component {
                       src={require("./img/BATTLE OF POWER-trump.png")}
                       alt="trump"
                     />
-                    {/* <p>Donald | My Board</p> */}
+                    <p>Player Two | My Board</p>
 
                     <Col xs="11">
                       <div className="board">
@@ -328,7 +390,7 @@ class GameBoard extends Component {
                       src={require("./img/BATTLE OF POWER-greta.png")}
                       alt="greta"
                     />
-                    {/* <p> Greta | Board Enemy </p> */}
+                    <p> Payer Two | Board Enemy </p>
 
                     <Col xs="11">
                       <div className="board">

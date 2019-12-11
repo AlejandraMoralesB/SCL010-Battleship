@@ -1,0 +1,6 @@
+/* Board */
+.board2-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
