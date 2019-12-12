@@ -2,7 +2,7 @@
   "name": "game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alejandramoralesb.github.io/SCL010-Battleship",
+  "homepage": "https://battleofpower-1a6b1.firebaseapp.com/",
   "dependencies": {
     "bootstrap": "^4.4.0",
     "gh-pages": "^2.1.1",
@@ -13,6 +13,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-scroll": "^1.7.14",
+    "reactjs-popup": "^1.5.0",
     "reactstrap": "^8.1.1",
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8"

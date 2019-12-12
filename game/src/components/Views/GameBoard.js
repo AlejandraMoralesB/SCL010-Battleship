@@ -5,8 +5,9 @@ import "./BoardTwo.css";
 import "./GameBoard.css";
 import "../../components/Buttons/Square.css";
 import { Col, Row } from "reactstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import Modal from "react-modal";
+import ReactModal from "react-modal";
 
 const customStyles = {
   content: {
@@ -52,8 +53,25 @@ class GameBoard extends Component {
     this.openModal = this.openModal.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+
+    //modal1
+    this.state = {
+      showModal: false
+    };
+
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
+  //Modal1
+
+  handleOpenModal() {
+    this.setState({ showModal: true });
   }
 
+  handleCloseModal() {
+    this.setState({ showModal: false });
+  }
+  //modal o
   openModal() {
     this.setState({ modalIsOpen: true });
   }
@@ -93,7 +111,7 @@ class GameBoard extends Component {
       console.log("PiecesOne", this.piecesOne);
       event.target.className = "btn-pieces-greta";
     } else {
-      // alert("It´s your turn to hit Donald!");
+      alert("It´s your turn to hit Donald!");
     }
     return this.piecesOne;
   }
@@ -316,10 +334,17 @@ class GameBoard extends Component {
                       onRequestClose={this.closeModal}
                       style={customStyles}
                     >
-                      <p ref={subtitle => (this.subtitle = subtitle)}>
+                      <p
+                        className="text-1"
+                        ref={subtitle => (this.subtitle = subtitle)}
+                      >
                         {" "}
                         <big>
-                          <b>Instrucciones: “Battle Of Power” ( Spanish)</b>
+                          <b>
+                            <h3 className="dialog-title">
+                              Instrucciones: “Battle Of Power” ( Spanish)
+                            </h3>
+                          </b>
                         </big>{" "}
                         <br /> 1- En el primer tablero posicionar las piezas en
                         las casillas siendo tu zona de juego el cual permanecerá
@@ -328,14 +353,73 @@ class GameBoard extends Component {
                         2-Una vez posicionadas tus piezas comienzas la partida,
                         no podrás volver a cambiarlos de posición.
                         <br />
+                        3- En el momento que los dos jugadores habéis pulsado
+                        “Comenzar partida”, Battle Of Power empieza.
+                        <br />
+                        4-Aparecerán en tu pantalla los dos tableros: el de
+                        posición izquierda (donde colocaste las piezas ) y el
+                        principal, derecha, donde realizarás y verás tus
+                        disparos, y las posiciones tocadas y debilitadas de tu
+                        oponente.
+                        <br />
+                        5-El primer jugador que dispara es el que ha creado la
+                        partida.
+                        <br />
+                        6-Podrás disparar en cualquier casilla del tablero,
+                        salvo en las que ya has disparado.
+                        <br />
+                        7-No puedes deshacer disparos ni propios ni de tus
+                        oponentes.
+                        <br />
+                        8-Es un juego por turnos: haces tu disparo, si es "Árbol
+                        verde " el turno pasa a tu oponente; si "tocas" y/o
+                        debilitar el poder de tu enemigo.
+                        <br />
+                        9-Gana el jugador que antes debilite el mundo de su
+                        enemigo y adivine las posición de todas sus piezas.
+                        <br />
+                        10-Suerte y a salvar el mundo!
+                        <br />
                       </p>
-                      <button onClick={this.closeModal}>close</button>
+                      <button className="btn-close" onClick={this.closeModal}>
+                        GO TO PlAY!
+                      </button>
                     </Modal>
                   </div>
                   <button className="btn-start" onClick={this.scrollToBottom}>
                     DONALD TURN
                   </button>
+                  <div>
+                    <button onClick={this.handleOpenModal}>
+                      Winner Donald
+                    </button>
+                    <ReactModal
+                      isOpen={this.state.showModal}
+                      contentLabel="onRequestClose Example"
+                      onRequestClose={this.handleCloseModal}
+                      className="Modal"
+                      overlayClassName="Overlay"
+                    >
+                      <br />
+                      <br />
+                      <h3>
+                        <b>The Winner is : DONALD TRUMP!</b>{" "}
+                      </h3>
+                      <img
+                        className="giftdonald"
+                        src="https://media.giphy.com/media/3oKIPf1BaBDILVxbYA/giphy.gif"
+                        alt="funny trump"
+                      ></img>{" "}
+                      <button
+                        className="btn-close2"
+                        onClick={this.handleCloseModal}
+                      >
+                        PLAY AGAIN
+                      </button>
+                    </ReactModal>
+                  </div>
                 </Col>
+
                 <Col xs="4">
                   <img
                     className="faces"
@@ -355,11 +439,6 @@ class GameBoard extends Component {
               </Row>
             </div>
             <Row>
-              {/* <img
-                className="logo"
-                src={require("../Views/img/BATTLE OF POWER-logo-gameboard.svg")}
-                alt="logo-room"
-              /> */}
               <div className="table" id="Donald">
                 <Row>
                   <Col xs="4">
@@ -373,11 +452,6 @@ class GameBoard extends Component {
                     <Col xs="11">
                       <div className="board">
                         <div className="border2-row">
-                          {/* <img
-                          className="board"
-                          src={require("./img/BATTLE OF POWER-tierra-white.svg")}
-                          alt="trump"
-                        /> */}
                           {this.renderBoardTwo(25)}
                         </div>
                       </div>
