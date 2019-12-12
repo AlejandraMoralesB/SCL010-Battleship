@@ -54,14 +54,33 @@ class GameBoard extends Component {
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
 
-    //modal1
     this.state = {
-      showModal: false
+      showModal: false,
+      showModal2: false
     };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleOpenModal2 = this.handleOpenModal2.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.handleCloseModal2 = this.handleCloseModal2.bind(this);
   }
+  //modal 1 -modal 2 winner
+  handleOpenModal() {
+    this.setState({ showModal: true });
+  }
+
+  handleOpenModal2() {
+    this.setState({ showModal2: true });
+  }
+
+  handleCloseModal() {
+    this.setState({ showModal: false });
+  }
+
+  handleCloseModal2() {
+    this.setState({ showModal2: false });
+  }
+
   //Modal1
 
   handleOpenModal() {
@@ -324,7 +343,7 @@ class GameBoard extends Component {
                   <div>
                     <button
                       className="btn-instruction"
-                      onClick={this.openModal}
+                      onClick={this.openModal1}
                     >
                       INSTRUCTIONS
                     </button>
@@ -390,9 +409,7 @@ class GameBoard extends Component {
                     DONALD TURN
                   </button>
                   <div>
-                    <button onClick={this.handleOpenModal}>
-                      Winner Donald
-                    </button>
+                    <button onClick={this.handleOpenModal}>Winner Greta</button>
                     <ReactModal
                       isOpen={this.state.showModal}
                       contentLabel="onRequestClose Example"
@@ -403,13 +420,19 @@ class GameBoard extends Component {
                       <br />
                       <br />
                       <h3>
-                        <b>The Winner is : DONALD TRUMP!</b>{" "}
+                        <b>The Winner is : GRETA!</b>{" "}
                       </h3>
-                      <img
-                        className="giftdonald"
-                        src="https://media.giphy.com/media/3oKIPf1BaBDILVxbYA/giphy.gif"
-                        alt="funny trump"
-                      ></img>{" "}
+                      <div className="giftdonald">
+                        <img
+                          className="gift2"
+                          src="https://media.giphy.com/media/ASzK5wWjMtc6A/giphy.gif"
+                          alt="funny trump"
+                        ></img>{" "}
+                        <img
+                          src="https://media.giphy.com/media/KazYwu6snELed35zkB/giphy.gif"
+                          alt="funny trump"
+                        ></img>{" "}
+                      </div>
                       <button
                         className="btn-close2"
                         onClick={this.handleCloseModal}
@@ -461,6 +484,40 @@ class GameBoard extends Component {
                     <button className="btn-start" onClick={this.scrollToTop}>
                       GRETA TURN
                     </button>
+                    <div>
+                      <button onClick={this.handleOpenModal2}>
+                        Winner Donald
+                      </button>
+                      <ReactModal
+                        isOpen={this.state.showModal2}
+                        contentLabel="Modal #2 Global Style Override Example"
+                        onRequestClose={this.handleCloseModal2}
+                        className="Modal"
+                        overlayClassName="Overlay"
+                      >
+                        <br />
+                        <br />
+                        <h3>
+                          <b>The Winner is : DONALD TRUMP!!!</b>{" "}
+                        </h3>
+                        <div className="giftdonald">
+                          <img
+                            src="https://media.giphy.com/media/TIyJGNK325XGciFEnI/giphy.gif"
+                            alt="funny trump"
+                          ></img>{" "}
+                          <img
+                            src="https://media.giphy.com/media/U1aN4HTfJ2SmgB2BBK/giphy.gif"
+                            alt="greta"
+                          ></img>{" "}
+                        </div>
+                        <button
+                          className="btn-close2"
+                          onClick={this.handleCloseModal2}
+                        >
+                          PLAY AGAIN
+                        </button>
+                      </ReactModal>
+                    </div>
                   </Col>
                   <Col xs="4">
                     <img
