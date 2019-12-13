@@ -5,10 +5,13 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto;
-  height: 200vh;
+  /* min-height: 200vh; */
   width: 100vw;
   line-height: 0.5;
   background: linear-gradient(90deg, black 50%, white 50%);
+}
+.space {
+  min-height: 100vh;
 }
 .logo {
   width: 50%;
@@ -66,10 +69,12 @@
 .faces-image {
   width: 70%;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 .text-content {
   justify-content: center;
 }
+
 /* Game Info */
 
 ul {
@@ -103,7 +108,7 @@ ul {
 }
 
 .table {
-  margin-top: 70px;
+  margin-top: 4rem;
 }
 
 .board-white {
